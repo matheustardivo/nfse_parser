@@ -57,13 +57,14 @@ module Prosoft
         linha = "TRC"
         linha << " " * 7
         linha << "0"
+        linha << "%-14s" % terceiro.cpf_cnpj
         
-        if terceiro.cpf_cnpj == "05954659000109"
-          # require "pry"; binding.pry
+        if terceiro.nome
+          linha << "%-60s" % terceiro.nome[0..59].gsub("&amp;", "&")
+        else
+          linha << " " * 60
         end
         
-        linha << "%-14s" % terceiro.cpf_cnpj
-        linha << "%-60s" % terceiro.nome[0..59].gsub("&amp;", "&")
         linha << " " * 189
         linha << "%-2s" % terceiro.uf
         linha << "20080101"
