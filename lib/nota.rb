@@ -28,7 +28,7 @@ class Nota
   
   def config!
     xml.gsub!("\n", "")
-    doc = Nokogiri::XML(xml)
+    doc = Nokogiri::XML(xml, nil, 'utf-8')
     @data_emissao = Date.parse(doc.xpath("//DataEmissao").first.children.to_s[0..10])
     @numero = doc.xpath("//IdentificacaoNfse/Numero").first.children.to_s.to_i
     @valor = doc.xpath("//Servico/Valores/ValorServicos").first.children.to_s.to_f
@@ -42,9 +42,9 @@ class Nota
       @uf_cliente = doc.xpath("//TomadorServico/Endereco/Estado").first.children.to_s
       
       terceiro = Terceiro.new(
-        cpf_cnpj: @cpf_cnpj_cliente, 
-        uf: @uf_cliente, 
-        nome: doc.xpath("//TomadorServico/RazaoSocial").first.children.to_s
+        :cpf_cnpj => @cpf_cnpj_cliente, 
+        :uf => @uf_cliente, 
+        :nome => doc.xpath("//TomadorServico/RazaoSocial").first.children.to_s
       )
     end
     

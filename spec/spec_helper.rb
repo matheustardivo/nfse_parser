@@ -4,6 +4,7 @@ Bundler.setup(:default, :development)
 Bundler.require
 
 require "nota"
+require "prosoft"
 
 # Dir[File.dirname(__FILE__) + "/support/**/*.rb"].each do |file|
 #   require file

@@ -1,11 +1,26 @@
-# encoding: utf-8
-
 require "date"
 require "ibge"
 
-class Prosoft
+module Prosoft
+  def self.read(file)
+    contents = []
+    File.open(file, "r:utf-8") do |f|
+      while line = f.gets
+        contents << line
+      end
+    end
+    
+    contents
+  end
+  
+  def self.file(file)
+    File.open("output/" + file, "w:iso-8859-1") do |file|
+      yield file
+    end
+  end
+  
   def self.gerar_notas(notas)
-    File.open("nfse_pjc.txt", "w:iso-8859-1") do |f|
+    Prosoft::file("nfse_pjc.txt") do |file|
       notas.each do |nota|
         linha = ""
         linha << " "
@@ -29,7 +44,7 @@ class Prosoft
 
         linha << "\r\n"
         
-        f.write(linha)
+        file.write(linha)
       end
     end
   end
@@ -37,18 +52,18 @@ class Prosoft
   def self.gerar_terceiros(terceiros)
     terceiros = terceiros.inject([]) { |resultado, t| resultado << t unless resultado.include?(t); resultado }
     
-    File.open("terceiros_pjc.txt", "w:iso-8859-1") do |f|
+    Prosoft::file("terceiros_pjc.txt") do |file|
       terceiros.each do |terceiro|
         linha = "TRC"
         linha << " " * 7
         linha << "0"
         
         if terceiro.cpf_cnpj == "05954659000109"
-          require "pry"; binding.pry
+          # require "pry"; binding.pry
         end
         
         linha << "%-14s" % terceiro.cpf_cnpj
-        linha << "%-60s" % terceiro.nome
+        linha << "%-60s" % terceiro.nome[0..59].gsub("&amp;", "&")
         linha << " " * 189
         linha << "%-2s" % terceiro.uf
         linha << "20080101"
@@ -60,12 +75,11 @@ class Prosoft
         else
           linha << " " * 5
         end
-        
         linha << " " * 85
 
         linha << "\r\n"
         
-        f.write(linha)
+        file.write(linha)
       end
     end
   end
