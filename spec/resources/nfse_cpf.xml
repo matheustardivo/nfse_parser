@@ -1,1 +1,78 @@
-<ns2:NFSE xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns4="http://www.ginfes.com.br/servico_consultar_nfse_envio" xmlns:ns3="http://www.ginfes.com.br/tipos" xmlns:ns5="http://www.ginfes.com.br/servico_cancelar_nfse_envio"><ns2:Nfse><ns3:IdentificacaoNfse><ns3:Numero>22</ns3:Numero><ns3:CodigoVerificacao>758329939</ns3:CodigoVerificacao></ns3:IdentificacaoNfse><ns3:DataEmissao>2011-06-26T15:57:15</ns3:DataEmissao><ns3:NaturezaOperacao>1</ns3:NaturezaOperacao><ns3:RegimeEspecialTributacao>0</ns3:RegimeEspecialTributacao><ns3:OptanteSimplesNacional>1</ns3:OptanteSimplesNacional><ns3:IncetivadorCultural>2</ns3:IncetivadorCultural><ns3:Competencia>201106</ns3:Competencia><ns3:Servico><ns3:Valores><ns3:ValorServicos>140.00</ns3:ValorServicos><ns3:IssRetido>2</ns3:IssRetido><ns3:ValorIss>0.00</ns3:ValorIss><ns3:BaseCalculo>140.00</ns3:BaseCalculo><ns3:Aliquota>0.0500</ns3:Aliquota><ns3:ValorLiquidoNfse>140.00</ns3:ValorLiquidoNfse></ns3:Valores><ns3:ItemListaServico>1719</ns3:ItemListaServico><ns3:CodigoTributacaoMunicipio>17.18.00 / 640</ns3:CodigoTributacaoMunicipio><ns3:Discriminacao>HONORARIOS PROFSSIONAIS</ns3:Discriminacao><ns3:MunicipioPrestacaoServico>3525904</ns3:MunicipioPrestacaoServico></ns3:Servico><ns3:ValorCredito>0.00</ns3:ValorCredito><ns3:PrestadorServico><ns3:IdentificacaoPrestador><ns3:Cnpj>1095776000103</ns3:Cnpj><ns3:InscricaoMunicipal>63044</ns3:InscricaoMunicipal></ns3:IdentificacaoPrestador><ns3:RazaoSocial>PRO JURIDICO CONTABIL S/S LTDA</ns3:RazaoSocial><ns3:Endereco><ns3:Endereco>QUINZE DE NOVEMBRO</ns3:Endereco><ns3:Numero>1671</ns3:Numero><ns3:Bairro>VILA MUNICIPAL</ns3:Bairro><ns3:Cidade>3525904</ns3:Cidade><ns3:Estado>SP</ns3:Estado><ns3:Cep>13201305</ns3:Cep></ns3:Endereco><ns3:Contato><ns3:Telefone>1145867630</ns3:Telefone><ns3:Email>secretaria.projur@terra.com.br</ns3:Email></ns3:Contato></ns3:PrestadorServico><ns3:TomadorServico><ns3:IdentificacaoTomador><ns3:CpfCnpj><ns3:Cpf>01603618856</ns3:Cpf></ns3:CpfCnpj></ns3:IdentificacaoTomador><ns3:RazaoSocial>AFONSO HENRIQUE CASERTA M. DE CAMPOS</ns3:RazaoSocial><ns3:Endereco><ns3:Endereco>RUA EDUARDO TOMANIK</ns3:Endereco><ns3:Numero>385</ns3:Numero><ns3:Complemento/><ns3:Bairro>CHACARA URBANA</ns3:Bairro><ns3:Cidade>3525904</ns3:Cidade><ns3:Estado>SP</ns3:Estado><ns3:Cep>13206090</ns3:Cep></ns3:Endereco><ns3:Contato><ns3:Telefone>1145867630</ns3:Telefone><ns3:Email>SEC03@PROJURIDICOCONTABIL.COM.BR</ns3:Email></ns3:Contato></ns3:TomadorServico><ns3:OrgaoGerador><ns3:CodigoMunicipio>3525904</ns3:CodigoMunicipio><ns3:Uf>SP</ns3:Uf></ns3:OrgaoGerador></ns2:Nfse></ns2:NFSE>
+<ns2:NFSE xmlns:ns2="http://www.w3.org/2000/09/xmldsig#"
+	xmlns:ns4="http://www.ginfes.com.br/servico_consultar_nfse_envio"
+	xmlns:ns3="http://www.ginfes.com.br/tipos" xmlns:ns5="http://www.ginfes.com.br/servico_cancelar_nfse_envio">
+	<ns2:Nfse>
+		<ns3:IdentificacaoNfse>
+			<ns3:Numero>22</ns3:Numero>
+			<ns3:CodigoVerificacao>758329939</ns3:CodigoVerificacao>
+		</ns3:IdentificacaoNfse>
+		<ns3:DataEmissao>2011-06-26T15:57:15</ns3:DataEmissao>
+		<ns3:NaturezaOperacao>1</ns3:NaturezaOperacao>
+		<ns3:RegimeEspecialTributacao>0</ns3:RegimeEspecialTributacao>
+		<ns3:OptanteSimplesNacional>1</ns3:OptanteSimplesNacional>
+		<ns3:IncetivadorCultural>2</ns3:IncetivadorCultural>
+		<ns3:Competencia>201106</ns3:Competencia>
+		<ns3:Servico>
+			<ns3:Valores>
+				<ns3:ValorServicos>140.00</ns3:ValorServicos>
+				<ns3:IssRetido>2</ns3:IssRetido>
+				<ns3:ValorIss>0.00</ns3:ValorIss>
+				<ns3:BaseCalculo>140.00</ns3:BaseCalculo>
+				<ns3:Aliquota>0.0500</ns3:Aliquota>
+				<ns3:ValorLiquidoNfse>140.00</ns3:ValorLiquidoNfse>
+			</ns3:Valores>
+			<ns3:ItemListaServico>1719</ns3:ItemListaServico>
+			<ns3:CodigoTributacaoMunicipio>17.18.00 / 640
+			</ns3:CodigoTributacaoMunicipio>
+			<ns3:Discriminacao>HONORARIOS PROFSSIONAIS</ns3:Discriminacao>
+			<ns3:MunicipioPrestacaoServico>3525904
+			</ns3:MunicipioPrestacaoServico>
+		</ns3:Servico>
+		<ns3:ValorCredito>0.00</ns3:ValorCredito>
+		<ns3:PrestadorServico>
+			<ns3:IdentificacaoPrestador>
+				<ns3:Cnpj>1095776000103</ns3:Cnpj>
+				<ns3:InscricaoMunicipal>63044</ns3:InscricaoMunicipal>
+			</ns3:IdentificacaoPrestador>
+			<ns3:RazaoSocial>PRO JURIDICO CONTABIL S/S LTDA</ns3:RazaoSocial>
+			<ns3:Endereco>
+				<ns3:Endereco>QUINZE DE NOVEMBRO</ns3:Endereco>
+				<ns3:Numero>1671</ns3:Numero>
+				<ns3:Bairro>VILA MUNICIPAL</ns3:Bairro>
+				<ns3:Cidade>3525904</ns3:Cidade>
+				<ns3:Estado>SP</ns3:Estado>
+				<ns3:Cep>13201305</ns3:Cep>
+			</ns3:Endereco>
+			<ns3:Contato>
+				<ns3:Telefone>1145867630</ns3:Telefone>
+				<ns3:Email>secretaria.projur@terra.com.br</ns3:Email>
+			</ns3:Contato>
+		</ns3:PrestadorServico>
+		<ns3:TomadorServico>
+			<ns3:IdentificacaoTomador>
+				<ns3:CpfCnpj>
+					<ns3:Cpf>01603618856</ns3:Cpf>
+				</ns3:CpfCnpj>
+			</ns3:IdentificacaoTomador>
+			<ns3:RazaoSocial>AFONSO HENRIQUE CASERTA M. DE CAMPOS
+			</ns3:RazaoSocial>
+			<ns3:Endereco>
+				<ns3:Endereco>RUA EDUARDO TOMANIK</ns3:Endereco>
+				<ns3:Numero>385</ns3:Numero>
+				<ns3:Complemento />
+				<ns3:Bairro>CHACARA URBANA</ns3:Bairro>
+				<ns3:Cidade>3525904</ns3:Cidade>
+				<ns3:Estado>SP</ns3:Estado>
+				<ns3:Cep>13206090</ns3:Cep>
+			</ns3:Endereco>
+			<ns3:Contato>
+				<ns3:Telefone>1145867630</ns3:Telefone>
+				<ns3:Email>SEC03@PROJURIDICOCONTABIL.COM.BR</ns3:Email>
+			</ns3:Contato>
+		</ns3:TomadorServico>
+		<ns3:OrgaoGerador>
+			<ns3:CodigoMunicipio>3525904</ns3:CodigoMunicipio>
+			<ns3:Uf>SP</ns3:Uf>
+		</ns3:OrgaoGerador>
+	</ns2:Nfse>
+</ns2:NFSE>
