@@ -8,10 +8,15 @@ class Nota
                 :aliquota, :imposto, :base_calculo, :cpf_cnpj_cliente, 
                 :tipo, :ie_cliente, :uf_cliente
   
-  def initialize
-    Date.strptime '03/21/2011', '%m/%d/%Y'
+  def initialize(args = {})
     NOTAS << self
     @xml = ""
+    
+    if args.has_key?(:xml)
+      add_xml(args[:xml])
+      config!
+    end
+    
   end
   
   def add_xml(line)
@@ -28,7 +33,7 @@ class Nota
   # Tipo de Nota/Espécie do Documento
   # Cliente Inscrição Estadual => não encontrei
   # Cliente UF
-  def config
+  def config!
     xml.gsub!("\n", "")
     doc = Nokogiri::XML(xml)
     @data_emissao = Date.parse(doc.xpath("//DataEmissao").first.children.to_s[0..10])
