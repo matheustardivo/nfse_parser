@@ -1,14 +1,15 @@
 module NfseParser
   module Prosoft
-    class Writer
+    module Writer
+      extend self
 
-      def self.file(file_name)
+      def file(file_name)
         File.open("output/" + file_name, "w:iso-8859-1") do |f|
           yield f
         end
       end
 
-      def self.gerar_notas(notas)
+      def gerar_notas(notas)
         file("nfse_pjc.txt") do |f|
           notas.each do |nota|
             linha = ""
@@ -38,7 +39,7 @@ module NfseParser
         end
       end
 
-      def self.gerar_terceiros(terceiros)
+      def gerar_terceiros(terceiros)
         terceiros = terceiros.inject([]) { |resultado, t| resultado << t unless resultado.include?(t); resultado }
 
         file("terceiros_pjc.txt") do |f|

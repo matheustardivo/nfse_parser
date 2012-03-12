@@ -1,8 +1,9 @@
 module NfseParser
   module Prosoft
-    class Parser
+    module Parser
+      extend self
 
-      def self.read(file)
+      def read(file)
         contents = []
         File.open(file, "r:utf-8") do |f|
           while line = f.gets
@@ -13,7 +14,7 @@ module NfseParser
         contents
       end
 
-      def self.generate_all(file_name)
+      def generate_all(file_name)
         contents = read(file_name)
 
         nota = Nota.new
